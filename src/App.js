@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from 'react-router-dom';
@@ -18,6 +17,7 @@ function App() {
         <Route exact path="/" component={ProductsView} />
         <Route path="/cart" component={Cart} />
         <Route path="/details" component={Details} />
+        {/* if nthing matces then NotFound will be dispalyed */}
         <Route component={NotFound} />
       </Switch>
     </React.Fragment>
