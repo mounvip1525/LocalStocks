@@ -1,9 +1,9 @@
 :root{
-  --purpleOne:#2a2a72;
-  --purpleTwo:#009ffd;
+  --purpleOne:#4b2f99;
+  --purpleTwo:#6f49d8;
   --whiteOne:#f3f3f3;
   --blackOne:#232528;
-  --yellowOne:#ffa400;
+  --yellowOne:#ffd000;
 }
 body{
   font-family: "M PLUS Rounded 1c" !important;
@@ -17,4 +17,7 @@ body{
 }
 .text-purple{
   color:var(--purpleOne);
+}
+.text-bright{
+  color:var(--purpleTwo)
 }

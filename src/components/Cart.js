@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Navbar extends Component {
+export default class Cart extends Component {
     render() {
         return (
             <div>
-                <h1>Hello from navbar</h1>
+                <h2>Cart lol</h2>
             </div>
         )
     }
