@@ -12,7 +12,6 @@ export default class ProductsView extends Component {
         return (
             <React.Fragment>
                 <div>
-                    {/* <Product /> */}
                     <div className="py-1">
                         <div className="container">
                             <Title name="our" title="Products" />
