@@ -39,4 +39,14 @@ body{
   margin-top:-10px;
   z-index:60;
   position:relative;
+  color:var(--whiteOne)
+}
+/* product */
+.product-img{
+  height:15rem;
+  width:10rem;
+  object-fit: cover;
+}
+.text-footer{
+  font-size:0.9rem;
 }
