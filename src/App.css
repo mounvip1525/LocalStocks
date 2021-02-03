@@ -1,14 +1,21 @@
 :root{
-  --purpleOne:#4b2f99;
-  --purpleTwo:#6f49d8;
+  --purpleOne:#7223bd;
+  --purpleTwo:#e5ccfa;
   --whiteOne:#f3f3f3;
   --blackOne:#232528;
   --yellowOne:#ffd000;
 }
 body{
   font-family: "M PLUS Rounded 1c" !important;
-  background:var(--whiteOne) !important;
   color:var(--blackOne) !important;
+  background:var(--purpleTwo) !important;
+}
+.top{
+  font-size:1.1rem;
+  color:rgb(255, 255, 255);
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .text-title{
   font-family:"Monserrat";
@@ -20,4 +27,16 @@ body{
 }
 .text-bright{
   color:var(--purpleTwo)
+}
+.Nav2{
+  background:#e24313;
+  width:60vw;
+  min-height:40px;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:-10px;
+  z-index:60;
+  position:relative;
 }
