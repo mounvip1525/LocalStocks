@@ -10,9 +10,9 @@ export default class ProductsView extends Component {
             <React.Fragment>
                 <div>
                     {/* <Product /> */}
-                    <div className="py-5">
+                    <div className="py-1">
                         <div className="container">
-                            <Title name="our" title="products" />
+                            <Title name="our" title="Products" />
                             <div className="row" />
                         </div>
                     </div>

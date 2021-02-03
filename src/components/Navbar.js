@@ -41,7 +41,7 @@ export default class Navbar extends Component {
                     </div>
                 </NavWrapper>
                 <div className="Nav2">
-                    One stop for amazing dresses,shirts,pants and many more! Enjoy Shopping
+                    One stop for amazing Dresses, Shirts, Pants and many more! Enjoy Shopping
                 </div>
             </div>
         )
