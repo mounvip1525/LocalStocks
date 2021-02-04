@@ -8,6 +8,7 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import NotFound from './components/NotFound';
 import Navbar from "./components/Navbar";
+import Modal from './components/Modal';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         {/* if nthing matces then NotFound will be dispalyed */}
         <Route component={NotFound} />
       </Switch>
+      <Modal />
     </React.Fragment>
   );
 }

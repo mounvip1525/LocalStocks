@@ -11,11 +11,11 @@ export default class Navbar extends Component {
                 <h6 className="top">Welcome to Clothing store, an app developed using React</h6>
                 <NavWrapper className="navbar navbar-expand-sm px-sm-3  navbar-dark">
                     <Link to="/">
-                        <img src={logo} alt="Store" className="navbar-brand mr-0" style={{marginTop:"-5px"}}></img>
+                        <img src={logo} alt="Store" className="navbar-brand mr-2" style={{marginTop:"-5px",color:"white",background:"#f1eae9"}}></img>
                     </Link>
                     <ul className="navbar-nav align-items-center ">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link px-0"><h4 className="ml-10">Clothing Store</h4></Link>
+                            <Link to="/" className="nav-link px-0"><h4 className="ml-10 mr-5">Clothing Store</h4></Link>
                         </li>
                     </ul>
                     <div className="left-links">
