@@ -59,3 +59,6 @@ body{
   margin-top:20px;
   border:3px solid var(--purpleOne);
 }
+.detail-container2{
+  background:var(--purpleTwo);
+}
