@@ -1,18 +1,21 @@
 :root{
-  --purpleOne:#7223bd;
-  --purpleTwo:#e5ccfa;
+  --purpleOne:#382c1b;
+  --purpleTwo:#F1EAE9;
   --whiteOne:#f3f3f3;
   --blackOne:#232528;
-  --yellowOne:#ffd000;
 }
 body{
   font-family: "M PLUS Rounded 1c" !important;
   color:var(--blackOne) !important;
   background:var(--purpleTwo) !important;
 }
+/* title */
+.heading{
+  font-family: 'Cinzel', serif !important;
+}
 .top{
   font-size:1.1rem;
-  color:rgb(255, 255, 255);
+  color:black;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +32,7 @@ body{
   color:var(--purpleTwo)
 }
 .Nav2{
-  background:#e24313;
+  background:#d6bcbe;
   width:60vw;
   min-height:40px;
   margin:auto;
@@ -49,4 +52,10 @@ body{
 }
 .text-footer{
   font-size:0.9rem;
+}
+/* detail */
+.detail-container{
+  background:white;
+  margin-top:20px;
+  border:3px solid var(--purpleOne);
 }
