@@ -24,8 +24,19 @@ class ProductProvider extends Component {
             return { products: tempProducts };
         });
     };
-    handleDetail=()=>{
-        console.log("hello from handle detail");
+
+    getItem=(id)=>this.state.products.find(item=>item.id===id);
+    // getItem=(id)=>{
+    //     const foundItem=this.state.products.find(item=>item.id===id);
+    //     return foundItem;
+    // }
+
+    handleDetail=(id)=>{
+        // console.log("hello from handle detail");
+        const productForDetail=this.getItem(id);
+        this.setState(()=>{
+            return { detailProduct: productForDetail }
+        })
     }
     addToCart=(id)=>{
         console.log(`add to cart.id is ${id}`);
