@@ -10,7 +10,7 @@ class ProductProvider extends Component {
         // products:storeProducts,
         products:[],
         detailProduct:detailProduct,
-        cart:storeProducts,
+        cart:[],
         modalOpen:false,
         modalProduct:detailProduct,
         cartSubTotal:0,
@@ -55,7 +55,7 @@ class ProductProvider extends Component {
         product.total=price;
         this.setState(()=>{
             return{ products:tempProducts, cart:[...this.state.cart,product] };
-        },()=>{console.log(this.state)});
+        },()=>{console.log(this.state);this.computeTotals()});
     }
     increment=id=>{
         console.log("increment method");
@@ -68,6 +68,19 @@ class ProductProvider extends Component {
     }
     clearCart=()=>{
         console.log("cart has been cleared");
+    }
+    computeTotals=()=>{
+        let subTotal=0;
+        this.state.cart.map(item=>subTotal+=item.total);
+        const tax=parseFloat((subTotal*0.1).toFixed(2));
+        const total=subTotal+tax;
+        this.setState(()=>{
+            return{
+                cartSubTotal:subTotal,
+                cartTax:tax,
+                cartTotal:total
+            }
+        })
     }
     openModal=(id)=>{
         const product=this.getItem(id);
