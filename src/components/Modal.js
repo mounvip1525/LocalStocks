@@ -69,7 +69,7 @@ justify-content:center;
     border-top:2px solid white;
 }
 img{
-    height:60vh;
+    height:50vh;
     object-fit:contain;
 }
 `;

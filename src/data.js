@@ -1,7 +1,7 @@
 export const storeProducts = [
     {
       id: 1,
-      title: "Google Pixel - Black",
+      title: "Google Pixel",
       img: "assets/pic-6.jpeg",
       price: 10,
       company: "GOOGLE",

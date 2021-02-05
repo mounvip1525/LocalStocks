@@ -15,7 +15,7 @@ export default class ProductsView extends Component {
                     <div className="py-1">
                         <div className="container">
                             <Title name="our" title="Products" />
-                            <div className="row mr-5 ml-5" >
+                            <div className="row mr-1 ml-1" >
                                 <ProductConsumer>
                                     {value=>{
                                         // console.log(value)
