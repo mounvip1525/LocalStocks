@@ -80,3 +80,15 @@ body{
   font-size: 1.2rem;
   color: yellow;
 }
+/* not found */
+.notfound{
+  border:2px solid white;
+  margin-top:25px;
+}
+.notfound>h3{
+  border-top:2px solid white;
+  padding-top:20px;
+}
+.notfound>p{
+  font-size:0.7rem;
+}
