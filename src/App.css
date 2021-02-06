@@ -143,3 +143,13 @@ ul{
 .notfound>p{
   font-size:0.7rem;
 }
+/* footer */
+.footer{
+  margin-top:50px;
+  bottom:0 !important;
+  margin-bottom:0 !important;
+  background:var(--purpleOne) !important;
+}
+.footer>h1{
+  margin-bottom:0 !important;
+}
