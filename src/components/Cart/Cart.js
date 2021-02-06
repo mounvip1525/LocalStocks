@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ProductConsumer } from '../../context';
 import Title from '../Title';
-import CartColumns from './CartColumns';
+// import CartColumns from './CartColumns';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
 

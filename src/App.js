@@ -10,6 +10,7 @@ import NotFound from './components/NotFound';
 import Navbar from "./components/Navbar";
 import Modal from './components/Modal';
 import Footer from './components/Footer';
+import Favourites from './components/Favourites/FavouritesList';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/" component={ProductsView} />
         <Route path="/cart" component={Cart} />
         <Route path="/details" component={Details} />
+        <Route path="/favourites" component={Favourites} />
         {/* if nthing matces then NotFound will be dispalyed */}
         <Route component={NotFound} />
       </Switch>

@@ -23,7 +23,7 @@ export default class Navbar extends Component {
                     <Link to="/cart" className="left">
                         <span className="mr-2"><i className="fa fa-phone" /></span> Contact Us
                     </Link> 
-                    <Link to="/cart" className="left">
+                    <Link to="/favourites" className="left">
                         <span className="mr-2"><i className="fa fa-heart" /></span> Favourites
                     </Link> 
                     <Link to="/cart" className="left">
