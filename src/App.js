@@ -9,6 +9,7 @@ import Cart from './components/Cart/Cart';
 import NotFound from './components/NotFound';
 import Navbar from "./components/Navbar";
 import Modal from './components/Modal';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route component={NotFound} />
       </Switch>
       <Modal />
+      <Footer />
     </React.Fragment>
   );
 }

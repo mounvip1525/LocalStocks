@@ -21,21 +21,18 @@ export default class Navbar extends Component {
                     <div className="left-links">
                     <ButtonContainer2>
                     <Link to="/cart" className="left">
-                        <span className="mr-2"></span> cart44
-                    </Link> •
+                        <span className="mr-2"><i className="fa fa-phone" /></span> Contact Us
+                    </Link> 
                     <Link to="/cart" className="left">
-                        <span className="mr-2"></span> cart44
-                    </Link> •
+                        <span className="mr-2"><i className="fa fa-heart" /></span> Favourites
+                    </Link> 
                     <Link to="/cart" className="left">
-                        <span className="mr-2"></span> cart44
-                    </Link> •
-                    <Link to="/cart" className="left">
-                        <span className="mr-2"></span> cart44
-                    </Link> •
+                        <span className="mr-2"><i className="fa fa-cart-plus" /></span> My Cart
+                    </Link> 
                     </ButtonContainer2>
-                    <Link to="/cart" className="ml-0">
+                    <Link to="/" className="ml-0">
                         <ButtonContainer>
-                            <span className="mr-2"><i className="fa fa-cart-plus" /></span> cart
+                            <span className="mr-2"><i className="fa fa-user" /></span>Profile 
                         </ButtonContainer>
                     </Link>
                     </div>

@@ -77,7 +77,7 @@ export const storeProducts = [
       img: "assets/pic-5.jpeg",
       price: 24,
       info:
-        "Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore.",
+        "Brooklyn Tote bag authentic try-hard put a bird on it mumblecore.",
       inCart: false,
       features:[
         "comfy",

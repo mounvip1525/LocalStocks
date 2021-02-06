@@ -121,10 +121,15 @@ ul{
   /* border-top:0.1px solid black !important; */
   /* border-bottom:0.1px solid black !important; */
 }
+.center-button:hover{
+  background:white !important;
+  color:black !important;
+}
 .cart-icon {
   cursor: pointer;
   font-size: 1.2rem;
   color: black;
+  margin-right:10px;
 }
 /* not found */
 .notfound{
