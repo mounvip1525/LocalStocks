@@ -8,6 +8,8 @@ body{
   font-family: "M PLUS Rounded 1c" !important;
   color:var(--blackOne) !important;
   background:var(--purpleTwo) !important;
+  overflow-x: scroll !important;
+  position:relative !important;
 }
 /* title */
 .heading{
@@ -155,19 +157,26 @@ ul{
   margin-bottom:0 !important;
   background:var(--purpleOne) !important;
   text-align: justify;
+  /* position:absolute; */
+  left:0 !important;
+  bottom:0 !important;
+  width:100%;
+  /* overflow-x: auto; */
 }
 .bottom{
   background:#D6BCBE;
-  padding:5px;
+  padding:10px;
   margin-top:-10px;
   margin-bottom:10px;
+  color:white;
 }
 .footer>h1{
   margin-bottom:0 !important;
 }
 .footer-icons{
   padding:8px;
-  background:white;
+  outline:1px solid white;
+  color:white;
   border-radius: 1px;
 }
 .footer-text{

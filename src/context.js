@@ -10,7 +10,8 @@ class ProductProvider extends Component {
         // products:storeProducts,
         products:[],
         detailProduct:detailProduct,
-        cart:storeProducts,
+        favourites:[],
+        cart:[],
         modalOpen:false,
         modalProduct:detailProduct,
         cartSubTotal:0,
@@ -43,6 +44,27 @@ class ProductProvider extends Component {
         this.setState(()=>{
             return { detailProduct: productForDetail }
         })
+    }
+    addToFavourites=(id)=>{
+        // console.log(`add to cart.id is ${id}`);
+        let tempProducts=[...this.state.products];
+        const index=tempProducts.indexOf(this.getItem(id));
+        const product=tempProducts[index];
+        product.favourite=!product.favourite;
+        let tempFavourites=[...this.state.favourites];
+        // console.log("----",tempFavourites)
+        // console.log(product.favourite)
+        if(product.favourite){
+            this.setState(()=>{
+                return{ products:tempProducts,favourites:[...this.state.favourites,product] };
+            },()=>{console.log("added to favourites")});
+        } else {
+            tempFavourites.splice(index,1)
+            this.setState(()=>{
+                return{ products:tempProducts,favourites:tempFavourites };
+            },()=>{console.log("removed from favourites")});
+        }
+        // console.log(this.state.favourites)
     }
     addToCart=(id)=>{
         // console.log(`add to cart.id is ${id}`);
@@ -142,6 +164,7 @@ class ProductProvider extends Component {
         return (
             <ProductContext.Provider 
                 value={{...this.state,handleDetail:this.handleDetail,
+                                      addToFavourites:this.addToFavourites,
                                       addToCart:this.addToCart,
                                       openModal:this.openModal,
                                       closeModal:this.closeModal,

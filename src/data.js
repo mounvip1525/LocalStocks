@@ -15,7 +15,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favorite:false
     },
     {
       id: 2,
@@ -33,7 +34,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favourite:false
     },
     {
       id: 3,
@@ -51,7 +53,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favourite:false
     },
     {
       id: 4,
@@ -69,7 +72,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favourite:false
     },
     {
       id: 5,
@@ -87,7 +91,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favourite:false
     },
     {
       id: 6,
@@ -105,7 +110,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favourite:false
     },
     {
       id: 7,
@@ -123,7 +129,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favourite:false
     },
     {
       id: 8,
@@ -141,7 +148,8 @@ export const storeProducts = [
         "refundable"
       ],
       count: 0,
-      total: 0
+      total: 0,
+      favourite:false
     }
   ];
   
@@ -161,5 +169,6 @@ export const storeProducts = [
       "refundable"
     ],
     count: 0,
-    total: 0
+    total: 0,
+    favourite:false
   };
