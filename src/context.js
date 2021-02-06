@@ -10,7 +10,7 @@ class ProductProvider extends Component {
         // products:storeProducts,
         products:[],
         detailProduct:detailProduct,
-        cart:[],
+        cart:storeProducts,
         modalOpen:false,
         modalProduct:detailProduct,
         cartSubTotal:0,

@@ -78,6 +78,14 @@ ul{
   padding:0;
 }
 /* cartItem */
+.cartItem{
+  background:lightblue;
+  /* width:75vw; */
+  min-height:30vh;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
 .btn-black {
   background: transparent;
   text-transform: capitalize;
