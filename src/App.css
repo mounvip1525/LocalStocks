@@ -54,6 +54,13 @@ body{
   font-size:0.9rem;
 }
 /* detail */
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:60vw;
+  margin:auto;
+}
 .detail-container{
   background:white;
   margin-top:20px;
@@ -61,6 +68,14 @@ body{
 }
 .detail-container2{
   background:var(--purpleTwo);
+}
+ul{
+  margin:0;
+  padding:0;
+}
+.features{
+  margin:0;
+  padding:0;
 }
 /* cartItem */
 .btn-black {

@@ -7,23 +7,25 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value=>{
-                    const { id, img, info, price, title, inCart }=value.detailProduct;
+                    const { id, img, info, price, title, inCart, features }=value.detailProduct;
                     return(
-                        <div className="container w-75">
-                            {/* <div className="row mt-0">
-                                <div className="col-10 mx-auto text-center text-slanted my-5">
-                                    <h1>{title}</h1>
-                                </div>
-                            </div> */}
+                        <div className="container2">
                             <div className="row detail-container">
                                 <div className="col-10 mx-auto col-md-5 my-5 mr-0 ml-0 p-0">
                                     <img src={img} className="img-fluid" alt="product"/>
                                 </div>
                                 <div className="col-10 mx-auto col-md-7 my-5 text-capitalize ml-5 detail-container2">
                                     <h2>Model : {title} </h2>
-                                    <h2><strong>price : <span>$</span>{price}</strong></h2>
-                                    <p className="text-capitalize lead mt-1 mb-0">some info about product:</p>
-                                    <p className="text-muted lead">{info}</p>
+                                    <h3>price : $ {price}</h3>
+                                    <p className="text-capitalize mt-1 mb-0">some info about product:</p>
+                                    <p className="text-muted">{info}</p>
+                                    <ul> Features
+                                    {features.map(feature=>{
+                                        return(
+                                            <p className="features">- {feature}</p>
+                                        )
+                                    })}
+                                    </ul>
                                     <div>
                                         <Link to="/">
                                             <ButtonContainer>Back to Products</ButtonContainer>
