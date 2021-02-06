@@ -193,3 +193,6 @@ section{
 .copyright{
   font-size:0.7rem;
 }
+.favouritesList{
+  min-height:50vh;
+}
