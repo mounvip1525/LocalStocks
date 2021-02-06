@@ -8,8 +8,8 @@ body{
   font-family: "M PLUS Rounded 1c" !important;
   color:var(--blackOne) !important;
   background:var(--purpleTwo) !important;
-  overflow-x: scroll !important;
-  position:relative !important;
+  /* overflow-x: scroll !important; */
+  /* position:relative !important; */
 }
 /* title */
 .heading{
@@ -78,6 +78,9 @@ ul{
 .features{
   margin:0;
   padding:0;
+}
+section{
+  min-height:45vh;
 }
 /* cartItem */
 .cartItem{
