@@ -17,7 +17,7 @@ export default class Cart extends Component {
                               <React.Fragment> 
                                 <Title name="your" title="cart" />
                                 {/* <CartColumns /> */}
-                                <div className="container-fluid text-center d-none d-lg-block">
+                                <div className="container-fluid d-lg-block">
                                     <div className="row">
                                         <div className="col-10 mx-auto col-lg-8">
                                             <CartList value={value}/>
