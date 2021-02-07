@@ -90,9 +90,9 @@ ul{
   position:absolute;
   width:100%;
   display: flex;
-  justify-content:flex-end;
   height:100%;
-  align-items: center;
+  align-items: baseline;
+  margin-top:-40px;
   /* margin-right:-50px; */
   margin-left:1rem;
   z-index:10;
@@ -248,5 +248,5 @@ section{
 }
 /* modal */
 .price-line{
-  border-bottom:2px solid white;
+  border-top:2px solid white;
 }
