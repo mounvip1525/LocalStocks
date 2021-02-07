@@ -175,6 +175,16 @@ section{
   color: black;
   margin-right:10px;
 }
+/* cart-totals */
+.cart-price{
+  display:flex;
+  justify-content: space-between;
+}
+.cartTotals{
+  background:#f3f3f3;
+  padding:5px;
+  padding-bottom:20px;
+}
 /* not found */
 .notfound{
   border:2px solid white;
