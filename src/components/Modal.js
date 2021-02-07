@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { ProductConsumer } from '../context';
-import { ButtonContainer } from './Button';
+import { ButtonContainer3 } from './Button';
 import { Link } from 'react-router-dom';
 
 export default class Modal extends Component {
@@ -24,14 +24,14 @@ export default class Modal extends Component {
                                         <h5 className="text-muted mt-2">price : $ {price} </h5>
                                         <div className="divider">
                                         <Link to="/">
-                                            <ButtonContainer onClick={()=>{closeModal();}}>
+                                            <ButtonContainer3 onClick={()=>{closeModal();}}>
                                                 continue shopping
-                                            </ButtonContainer>
+                                            </ButtonContainer3>
                                         </Link>
                                         <Link to='/cart'>
-                                            <ButtonContainer onClick={()=>{closeModal();}}>
+                                            <ButtonContainer3 onClick={()=>{closeModal();}}>
                                                 go to cart
-                                            </ButtonContainer>
+                                            </ButtonContainer3>
                                         </Link>
                                         </div>
                                     </div>

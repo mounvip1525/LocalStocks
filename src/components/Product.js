@@ -27,8 +27,8 @@ export default class Product extends Component {
                         </div>
                         <div className="card-footer d-flex justify-content-between mt-1">
                             <div className="d-flex">
-                                {favourite ? <i className="fa fa-heartbeat mr-2" onClick={()=>{value.addToFavourites(id)}}/> :
-                                             <i className="fa fa-heart mr-2" onClick={()=>{value.addToFavourites(id)}} />}
+                                {favourite ? <i className="fa fa-heartbeat mr-2 detail-heart" title="Remove from favourites" onClick={()=>{value.addToFavourites(id)}}/> :
+                                             <i className="fa fa-heart mr-2 detail-heart" title="Add to favourites" onClick={()=>{value.addToFavourites(id)}} />}
                                 <p className="align-self-center mb-0 text-footer">{title}</p>
                             </div>
                             <h5 className="mb-0">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ProductConsumer } from '../context';
 import { Link } from 'react-router-dom';
-import { ButtonContainer } from '../components/Button';
+import { ButtonContainer3 } from '../components/Button';
 export default class Details extends Component {
     render() {
         return (
@@ -14,8 +14,8 @@ export default class Details extends Component {
                                 <div className="col-10 mx-auto col-md-5 my-5 mr-0 ml-0 p-0">
                                     <h1 className="img-next">
                                         <span>
-                                        {favourite ? <i className="fa fa-heartbeat p-2 detail-heart" onClick={()=>{value.addToFavourites(id)}}/> :
-                                                     <i className="fa fa-heart p-2 detail-heart" onClick={()=>{value.addToFavourites(id)}} />}
+                                        {favourite ? <i className="fa fa-heartbeat p-2 detail-heart" title="Remove from favourites" onClick={()=>{value.addToFavourites(id)}}/> :
+                                                     <i className="fa fa-heart p-2 detail-heart" title="Add to favourites" onClick={()=>{value.addToFavourites(id)}} />}
                                         </span>
                                     </h1>
                                     <img src={img} className="img-fluid detail-img" alt="product"/>
@@ -34,12 +34,12 @@ export default class Details extends Component {
                                     })}
                                     </ul>
                                     <div>
+                                        <ButtonContainer3 cart disabled={inCart?true:false} onClick={()=>{value.addToCart(id);value.openModal(id)}}>
+                                            {inCart ? "In Cart": "Add to Cart"} <i className="fa fa-cart-plus" />
+                                        </ButtonContainer3>
                                         <Link to="/">
-                                            <ButtonContainer>Back to Products</ButtonContainer>
+                                            <ButtonContainer3>Back to Home{" "}<i className="fa fa-home"/></ButtonContainer3>
                                         </Link>
-                                        <ButtonContainer cart disabled={inCart?true:false} onClick={()=>{value.addToCart(id);value.openModal(id)}}>
-                                            {inCart ? "In Cart": "Add to Cart"}
-                                        </ButtonContainer>
                                     </div>
                                     </div>
                                 </div>
