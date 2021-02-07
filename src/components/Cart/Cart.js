@@ -4,6 +4,8 @@ import Title from '../Title';
 // import CartColumns from './CartColumns';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
+import {ButtonContainer3} from '../Button';
+import {Link} from 'react-router-dom';
 
 export default class Cart extends Component {
     render() {
@@ -30,7 +32,16 @@ export default class Cart extends Component {
                               </React.Fragment> 
                                 )
                         } else {
-                            return(<Title name="your cart is currently" title="empty" />)
+                            return(<div>
+                                        <Title name="your cart is currently" title="empty" />
+                                        <div className="w-100 text-center">
+                                        <Link to="/">
+                                            <ButtonContainer3>
+                                                <p className="m-0 p-0">Back to Home page</p>
+                                            </ButtonContainer3>
+                                        </Link>
+                                    </div>
+                                    </div>)
                         }
                     }}
                 </ProductConsumer>

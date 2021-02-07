@@ -24,10 +24,10 @@ export default function CartItem({item,value}) {
                                 <span className="btn btn-black" onClick={()=>increment(id)}>+</span>
                             </div>
                             <div className="d-flex">
-                                <div className="cart-icon mt-3" onClick={()=>removeItem(id)}>Delete{" "}<i className="fa fa-trash" /></div>
-                                <div className="mt-3 cart-icon">  | Save for later{" "}<i className="fa fa-bookmark" /></div>
+                                <div className="cart-icon mt-1" onClick={()=>removeItem(id)}>Delete<i className="fa fa-trash" /></div>
+                                <div className="mt-1 cart-icon">| Save for later<i className="fa fa-bookmark" /></div>
                                 <Link to="/" style={{textDecoration:"none"}}>
-                                    <div className="mt-3 cart-icon">  | See more{" "}<i className="fa fa-home" /></div>
+                                    <div className="mt-1 cart-icon">| See more<i className="fa fa-home" /></div>
                                 </Link>
                             </div>
                         </div>

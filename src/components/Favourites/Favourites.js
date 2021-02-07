@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {ButtonContainer} from '../Button';
+import {ButtonContainer3} from '../Button';
 import Title from '../Title';
 
 export default function Favourites({item,value}) {
-    const { img, inCart, info, title, id, favourite, price }=item;
+    const { img, inCart, info, title, id, price }=item;
     return (
         <div className="cartItem align-items-center py-3 px-3 pb-4 col-lg-8 mx-auto mt-3">
         <div className="cart-heading">
@@ -21,18 +21,18 @@ export default function Favourites({item,value}) {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="mt-5 ml-3">
                 <Link to="/">
-                    <ButtonContainer>Back to Products</ButtonContainer>
+                    <ButtonContainer3>Back to Products</ButtonContainer3>
                 </Link>
-                <ButtonContainer cart disabled={inCart?true:false} onClick={()=>{value.addToCart(id);value.openModal(id)}}>
+                <ButtonContainer3 cart disabled={inCart?true:false} onClick={()=>{value.addToCart(id);value.openModal(id)}}>
                     {inCart ? "In Cart": "Add to Cart"}
-                </ButtonContainer>
+                </ButtonContainer3>
             </div>
-            <div>
-                <ButtonContainer onClick={()=>value.addToFavourites(id)}>Remove from Favourites
+            <div className="ml-3">
+                <ButtonContainer3 onClick={()=>value.addToFavourites(id)}>Remove from Favourites
                     <i className="fa fa-heart-broken"></i>
-                </ButtonContainer>
+                </ButtonContainer3>
             </div>
         </div>
         </div>

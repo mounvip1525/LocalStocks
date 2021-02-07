@@ -44,13 +44,13 @@ export const ButtonContainer3=styled.button`
 text-transform:capitalize;
 font-size:1.2rem;
 background:transparent;
-border:none;
+border:1px solid #d6bcb6;
 color:"var(--purpleOne)";
 padding:0.2rem 0.5rem;
 cursor:pointer;
 margin:0.2rem 0.5rem 0.2rem 0;
 // transition:all 0.5s ease-in-out;
 &:hover{
-    border:1px solid #d6bcb6;
+    background:"var(--whiteOne)";
 }
 `;

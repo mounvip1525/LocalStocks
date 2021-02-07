@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {ProductConsumer} from '../../context';
 import Favourites from './Favourites';
 import Title from '../Title';
-import { ButtonContainer } from '../Button';
+import { ButtonContainer3 } from '../Button';
 import {Link} from 'react-router-dom';
 
 export default class FavouritesList extends Component {
@@ -20,7 +20,13 @@ export default class FavouritesList extends Component {
                             )}):
                                 <div>
                                     <Title name="You have NO" title="Favourites"/>
-                                    <Link to="/"><ButtonContainer><p>Back to Home page</p></ButtonContainer></Link>
+                                    <div className="w-100 text-center">
+                                        <Link to="/">
+                                            <ButtonContainer3>
+                                                <p className="m-0 p-0">Back to Home page</p>
+                                            </ButtonContainer3>
+                                        </Link>
+                                    </div>
                                 </div>
                         }
                        </div>

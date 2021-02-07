@@ -33,12 +33,12 @@ export default class Details extends Component {
                                         )
                                     })}
                                     </ul>
-                                    <div>
+                                    <div className="d-flex">
                                         <ButtonContainer3 cart disabled={inCart?true:false} onClick={()=>{value.addToCart(id);value.openModal(id)}}>
-                                            {inCart ? "In Cart": "Add to Cart"} <i className="fa fa-cart-plus" />
+                                            {inCart ? "In Cart": "Add to Cart"}
                                         </ButtonContainer3>
                                         <Link to="/">
-                                            <ButtonContainer3>Back to Home{" "}<i className="fa fa-home"/></ButtonContainer3>
+                                            <ButtonContainer3>Back to Home</ButtonContainer3>
                                         </Link>
                                     </div>
                                     </div>
