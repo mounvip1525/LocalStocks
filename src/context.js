@@ -45,26 +45,45 @@ class ProductProvider extends Component {
             return { detailProduct: productForDetail }
         })
     }
+    removeItem=id=>{
+        let tempProducts=[...this.state.products];
+        let tempCart=[...this.state.cart];
+        tempCart=tempCart.filter(item=>item.id !== id);
+        const index=tempProducts.indexOf(this.getItem(id));
+        let removedProduct=tempProducts[index];
+        removedProduct.inCart=false;
+        removedProduct.count=0;
+        removedProduct.total=0;
+        this.setState(()=>{
+            return {
+                cart:[...tempCart],
+                products:[...tempProducts]
+            }
+        },()=>{this.computeTotals()})
+        console.log("item removed from cart");
+    }
     addToFavourites=(id)=>{
         // console.log(`add to cart.id is ${id}`);
         let tempProducts=[...this.state.products];
         const index=tempProducts.indexOf(this.getItem(id));
         const product=tempProducts[index];
-        product.favourite=!product.favourite;
+        // product.favourite=!product.favourite;
         let tempFavourites=[...this.state.favourites];
         // console.log("----",tempFavourites)
         // console.log(product.favourite)
-        if(product.favourite){
+        if(!product.favourite){
+            product.favourite=true;
             this.setState(()=>{
                 return{ products:tempProducts,favourites:[...this.state.favourites,product] };
             },()=>{console.log("added to favourites")});
         } else {
-            tempFavourites.splice(index,1)
+            tempFavourites=tempFavourites.filter(item=>item.id !== id);
+            product.favourite=false;
             this.setState(()=>{
                 return{ products:tempProducts,favourites:tempFavourites };
             },()=>{console.log("removed from favourites")});
         }
-        // console.log(this.state.favourites)
+        console.log(this.state.favourites)
     }
     addToCart=(id)=>{
         // console.log(`add to cart.id is ${id}`);

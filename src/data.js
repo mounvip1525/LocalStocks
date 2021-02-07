@@ -16,7 +16,7 @@ export const storeProducts = [
       ],
       count: 0,
       total: 0,
-      favorite:false
+      favourite:false
     },
     {
       id: 2,
