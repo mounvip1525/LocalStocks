@@ -19,16 +19,19 @@ export default class Navbar extends Component {
                         </li>
                     </ul>
                     <div className="left-links">
-                    <ButtonContainer2>
-                    <Link to="/cart" className="left">
-                        <span className="mr-2"><i className="fa fa-phone" /></span> Contact Us
-                    </Link> 
-                    <Link to="/favourites" className="left">
-                        <span className="mr-2"><i className="fa fa-heart" /></span> Favourites
-                    </Link> 
-                    <Link to="/cart" className="left">
-                        <span className="mr-2"><i className="fa fa-cart-plus" /></span> My Cart
-                    </Link> 
+                    <ButtonContainer2 className="d-flex">
+                        <div className="left">
+                            <span className="mr-2"><i className="fa fa-phone" /></span><a href="mailto:mounvip1525@gmail.com">Contact Us</a>
+                        </div> 
+                        <div>
+                        <Link to="/favourites" className="left">
+                            <span className="mr-2"><i className="fa fa-heart" /></span> Favourites
+                        </Link> </div>
+                        <div>
+                        <Link to="/cart" className="left">
+                            <span className="mr-2"><i className="fa fa-cart-plus" /></span> My Cart
+                        </Link>
+                        </div> 
                     </ButtonContainer2>
                     <Link to="/" className="ml-0">
                         <ButtonContainer>
