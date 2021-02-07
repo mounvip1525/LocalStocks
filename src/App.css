@@ -55,6 +55,24 @@ body{
 .text-footer{
   font-size:0.9rem;
 }
+.side-widgets{
+  position:fixed;
+  top:12rem;
+  left:0;
+  background:#DBDBDB;
+  padding:10px;
+}
+ul{
+  list-style-type:none;
+}
+.side-widgets li{
+  background: white;
+  border-radius: 3px;
+  /* border:1.5px solid white; */
+  padding:2px;
+  margin:2px;
+  margin-bottom:8px;
+}
 /* detail */
 .container2{
   display: flex;
@@ -198,10 +216,11 @@ section{
   margin-bottom:0 !important;
 }
 .footer-icons{
-  padding:8px;
+  padding:4px;
   outline:1px solid white;
   color:white;
   border-radius: 1px;
+  font-size:0.95rem;
 }
 .footer-text{
   color:white;
@@ -216,4 +235,8 @@ section{
 }
 .favouritesList{
   min-height:50vh;
+}
+/* modal */
+.price-line{
+  border-bottom:2px solid white;
 }

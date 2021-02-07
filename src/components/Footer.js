@@ -12,9 +12,9 @@ export default class Footer extends Component {
                     <span className="mr-2 footer-icons"><i className="fa fa-youtube" /></span>
                     <span className="mr-2 footer-icons"><i className="fa fa-twitter" /></span> 
                     <span className="mr-2 footer-icons"><i className="fa fa-instagram" /></span> 
+                    <span className="mr-2 footer-icons"><i className="fa fa-envelope" /></span> 
                 </div>
                 <div className="footer-text mt-3">
-                    <p className="mb-0">Info • Support • Marketing</p>
                     <p className="mt-0 mb-0">Terms of Use • Privacy Policy</p>
                     <p className="mt-0 copyright text-muted">© Clothing Store | Developed by Mounvi</p>
                 </div>
