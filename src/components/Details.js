@@ -7,14 +7,21 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value=>{
-                    const { id, img, info, price, title, inCart, features }=value.detailProduct;
+                    const { id, img, info, price, title, inCart, features, favourite }=value.detailProduct;
                     return(
                         <div className="container2">
                             <div className="row detail-container">
                                 <div className="col-10 mx-auto col-md-5 my-5 mr-0 ml-0 p-0">
-                                    <img src={img} className="img-fluid" alt="product"/>
+                                    <h1 className="img-next">
+                                        <span>
+                                        {favourite ? <i className="fa fa-heartbeat p-2 detail-heart" onClick={()=>{value.addToFavourites(id)}}/> :
+                                                     <i className="fa fa-heart p-2 detail-heart" onClick={()=>{value.addToFavourites(id)}} />}
+                                        </span>
+                                    </h1>
+                                    <img src={img} className="img-fluid detail-img" alt="product"/>
                                 </div>
-                                <div className="col-10 mx-auto col-md-7 my-5 text-capitalize ml-5 detail-container2">
+                                <div className="col-10 mx-auto col-md-7 text-capitalize ml-5 detail-container2">
+                                    <div className="mt-5">
                                     <h2>Model : {title} </h2>
                                     <h3>price : $ {price}</h3>
                                     <p className="text-capitalize mt-1 mb-0">some info about product:</p>
@@ -33,6 +40,7 @@ export default class Details extends Component {
                                         <ButtonContainer cart disabled={inCart?true:false} onClick={()=>{value.addToCart(id);value.openModal(id)}}>
                                             {inCart ? "In Cart": "Add to Cart"}
                                         </ButtonContainer>
+                                    </div>
                                     </div>
                                 </div>
                             </div>

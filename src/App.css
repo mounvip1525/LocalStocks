@@ -60,7 +60,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width:60vw;
+  width:50vw;
   margin:auto;
 }
 .detail-container{
@@ -68,8 +68,29 @@ body{
   margin-top:20px;
   border:3px solid var(--purpleOne);
 }
+.img-next{
+  position:absolute;
+  width:100%;
+  display: flex;
+  justify-content:flex-end;
+  height:100%;
+  align-items: center;
+  /* margin-right:-50px; */
+  margin-left:1rem;
+  z-index:10;
+}
+.img-next >span{
+  background:var(--whiteOne);
+}
+.detail-heart:hover{
+  transform:scale(1.1)
+}
 .detail-container2{
   background:var(--purpleTwo);
+}
+.detail-img{
+  height:60vh !important;
+  object-fit: cover;
 }
 ul{
   margin:0;
