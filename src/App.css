@@ -243,8 +243,19 @@ section{
 .copyright{
   font-size:0.7rem;
 }
+/* favourites */
 .favouritesList{
   min-height:50vh;
+}
+.notfound2{
+  margin:auto;
+  border:2px solid white;
+  width:50vw;
+  margin-top:10px;
+}
+.divider-bottom{
+  border-top:2px solid white;
+  padding:15px;
 }
 /* modal */
 .price-line{

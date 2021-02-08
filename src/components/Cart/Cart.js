@@ -32,9 +32,9 @@ export default class Cart extends Component {
                               </React.Fragment> 
                                 )
                         } else {
-                            return(<div>
+                            return(<div className="notfound2">
                                         <Title name="your cart is currently" title="empty" />
-                                        <div className="w-100 text-center">
+                                        <div className="w-100 text-center divider-bottom">
                                         <Link to="/">
                                             <ButtonContainer3>
                                                 <p className="m-0 p-0">Back to Home page</p>

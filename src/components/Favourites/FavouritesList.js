@@ -18,9 +18,9 @@ export default class FavouritesList extends Component {
                                 return (
                                 <Favourites item={item} value={value}/>
                             )}):
-                                <div>
+                                <div className="notfound2">
                                     <Title name="You have NO" title="Favourites"/>
-                                    <div className="w-100 text-center">
+                                    <div className="w-100 text-center divider-bottom">
                                         <Link to="/">
                                             <ButtonContainer3>
                                                 <p className="m-0 p-0">Back to Home page</p>
