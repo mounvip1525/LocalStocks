@@ -16,7 +16,7 @@ export default class Footer extends Component {
                 </div>
                 <div className="footer-text mt-3">
                     <p className="mt-0 mb-0">Terms of Use • Privacy Policy</p>
-                    <p className="mt-0 copyright text-muted">© Clothing Store | Developed by Mounvi</p>
+                    <p className="mt-0 copyright text-muted">© Local Stocks</p>
                 </div>
             </div>
         )

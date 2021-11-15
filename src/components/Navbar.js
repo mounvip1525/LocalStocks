@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import logo from '../logo.jpeg';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ButtonContainer, ButtonContainer2 } from './Button';
@@ -8,14 +8,13 @@ export default class Navbar extends Component {
     render() {
         return (
             <div>
-                <h6 className="top">Welcome to Clothing store, an app developed using React</h6>
                 <NavWrapper className="navbar navbar-expand-sm px-sm-3  navbar-dark">
                     <Link to="/">
-                        <img src={logo} alt="Store" className="navbar-brand mr-2" style={{marginTop:"-5px",color:"white",background:"#f1eae9"}}></img>
+                        <img src={logo} alt="Store" className="navbar-brand mr-2" style={{marginTop:"-5px",color:"white",background:"white",height:"3rem"}}></img>
                     </Link>
                     <ul className="navbar-nav align-items-center ">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link px-0"><h4 className="ml-10 mr-5">Clothing Store</h4></Link>
+                            <Link to="/" className="nav-link px-0"><h3 className="ml-10 mr-5" style={{color:"white"}}>Local Stocks</h3></Link>
                         </li>
                     </ul>
                     <div className="left-links">
@@ -41,7 +40,7 @@ export default class Navbar extends Component {
                     </div>
                 </NavWrapper>
                 <div className="Nav2">
-                    One stop for amazing Dresses, Shirts, Pants and many more! Enjoy Shopping
+                    One stop destination for organic items! Enjoy Shopping
                 </div>
             </div>
         )

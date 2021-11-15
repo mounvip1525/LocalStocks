@@ -1,13 +1,13 @@
 :root{
-  --purpleOne:#2e2417;
-  --purpleTwo:#F1EAE9;
-  --whiteOne:#f3f3f3;
+  --purpleOne:#7FC8A9;
+  --purpleTwo:#ffffff;
+  --whiteOne:#cad1c8;
   --blackOne:#232528;
 }
 body{
   font-family: "M PLUS Rounded 1c" !important;
   color:var(--blackOne) !important;
-  background:var(--purpleTwo) !important;
+  /* background:var(--purpleTwo) !important; */
   /* overflow-x: scroll !important; */
   /* position:relative !important; */
 }
@@ -34,7 +34,7 @@ body{
   color:var(--purpleTwo)
 }
 .Nav2{
-  background:#d6bcbe;
+  background:#444941;
   width:60vw;
   min-height:40px;
   margin:auto;
@@ -59,7 +59,7 @@ body{
   position:fixed;
   top:12rem;
   left:0;
-  background:#DBDBDB;
+  background:#dbdbdb;
   padding:10px;
 }
 ul{
@@ -147,7 +147,7 @@ section{
 
 }
 .btn-black {
-  background: #d6bcb6 !important;
+  background: #5F7A61 !important;
   text-transform: capitalize;
   font-size: 0.8rem !important;
   border-radius: 0.1rem !important;
@@ -216,7 +216,7 @@ section{
   /* overflow-x: auto; */
 }
 .bottom{
-  background:#D6BCBE;
+  background:#444941;
   padding:10px;
   margin-top:-10px;
   margin-bottom:10px;
@@ -260,4 +260,65 @@ section{
 /* modal */
 .price-line{
   border-top:2px solid white;
+}
+.home{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:3%;
+}
+.landing-img{
+  height:25rem;
+}
+.features{
+  display:flex;
+  width:90vw;
+  margin:4% auto;
+}
+.features div{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex:1;
+  height:20rem;
+}
+.features div h3{
+  font-size:1.3rem;
+}
+.features img{
+  height:12rem;
+  object-fit: cover;
+}
+.items-landing{
+  display:flex;
+  flex-wrap: wrap;
+  width:80vw;
+  justify-content: center;
+}
+.items-landing img{
+  height:12rem;
+  margin:3%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.items-landing img:hover{
+  transform:scale(1.1);
+  transition: all 0.5s ease;
+}
+.home button{
+  background: var(--purpleOne);
+  border:none;
+  outline:none;
+  font-size: x-large;
+  cursor:pointer;
+  padding:0.5% 2%;
+  border-radius: 3px;
+}
+.home div h4{
+  width:40vw;
+  text-align: center;
+  font-size: 1.2rem;
+  margin:5% auto;
 }

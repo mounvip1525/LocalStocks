@@ -58,13 +58,13 @@ const ProductWrapper = styled.div`
 .card {
     border-color: transparent;
     transition: all 0.2s linear;
-    // background:#d6bcbe
+    // background:#7FC8A9
 }
 .cart-text{
     font-size:0.85rem;
 }
 .card-footer {
-    background: #d6bcbe;
+    background: #7FC8A9;
     border-top: transparent;
     transition: all 1s linear;
 }

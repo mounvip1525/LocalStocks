@@ -1,9 +1,9 @@
 export const storeProducts = [
     {
       id: 1,
-      title: "Long dress",
-      img: "assets/pic-1.webp",
-      price: 10,
+      title: "Millets Pack",
+      img: "assets/pic1.jpeg",
+      price: 50,
       info:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub.",
       inCart: false,
@@ -20,9 +20,9 @@ export const storeProducts = [
     },
     {
       id: 2,
-      title: "Long dress",
-      img: "assets/pic-2.webp",
-      price: 16,
+      title: "Pomogranetes",
+      img: "assets/pic2.jpeg",
+      price: 12,
       info:
         "echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics.",
       inCart: false,
@@ -39,9 +39,9 @@ export const storeProducts = [
     },
     {
       id: 3,
-      title: "Off shoulders",
-      img: "assets/pic-3.webp",
-      price: 8,
+      title: "Vegetables",
+      img: "assets/pic3.jpeg",
+      price: 25,
       info:
         "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub.",
       inCart: false,
@@ -58,18 +58,17 @@ export const storeProducts = [
     },
     {
       id: 4,
-      title: "Uber Tee",
-      img: "assets/pic-9.jpeg",
-      price: 18,
+      title: "Capsicums",
+      img: "assets/pic4.jpeg",
+      price: 10,
       info:
-        "semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+        "Capsicums powerful antioxidants and anti-inflammatory with rich Vitamin content. Available fresh and grown in natural way",
       inCart: false,
       features:[
-        "comfy",
-        "freezy",
-        "uber cool",
-        "branded",
-        "refundable"
+        "Mildly flavoured",
+        "Fertilizers free vegetables",
+        "Fresh and organic",
+        "Used mainly in salads",
       ],
       count: 0,
       total: 0,
@@ -77,9 +76,9 @@ export const storeProducts = [
     },
     {
       id: 5,
-      title: "Peachy Breazy",
-      img: "assets/pic-5.jpeg",
-      price: 24,
+      title: "Jaggery",
+      img: "assets/pic5.jpeg",
+      price: 22,
       info:
         "Brooklyn Tote bag authentic try-hard put a bird on it mumblecore.",
       inCart: false,
@@ -96,9 +95,9 @@ export const storeProducts = [
     },
     {
       id: 6,
-      title: "Short Sleeve",
-      img: "assets/pic-6.jpeg",
-      price: 17,
+      title: "Dry fruits",
+      img: "assets/pic6.jpeg",
+      price: 34,
       info:
         "DIY coloring book mixtape craft beer sartorial hella blue bottle.",
       inCart: false,
@@ -115,9 +114,9 @@ export const storeProducts = [
     },
     {
       id: 7,
-      title: "Peach Dress",
-      img: "assets/pic-7.jpeg",
-      price: 30,
+      title: "Lettuce",
+      img: "assets/pic7.jpeg",
+      price: 7,
       info:
         "Tote bag wolf authentic try-hard put a bird on it mumblecore.",
       inCart: false,
@@ -134,9 +133,9 @@ export const storeProducts = [
     },
     {
       id: 8,
-      title: "Yelloe Plazo",
-      img: "assets/pic-8.jpeg",
-      price: 2,
+      title: "Olive oil",
+      img: "assets/pic8.jpeg",
+      price: 25,
       info:
         "Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial",
       inCart: false,
@@ -155,9 +154,9 @@ export const storeProducts = [
   
   export const detailProduct = {
     id: 1,
-    title: "Uber tee",
-    img: "assets/pic-1.webp",
-    price: 10,
+    title: "Millets pack",
+    img: "assets/pic1.jpeg",
+    price: 50,
     info:
       "echo park actually green juice sriracha paleo.ethical helvetica photo booth gentrify.",
     inCart: false,

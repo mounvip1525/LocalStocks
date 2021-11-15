@@ -11,13 +11,15 @@ import Navbar from "./components/Navbar";
 import Modal from './components/Modal';
 import Footer from './components/Footer';
 import Favourites from './components/Favourites/FavouritesList';
+import Home from "./components/Home";
 
 function App() {
   return (
     <React.Fragment>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={ProductsView} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/products" component={ProductsView} />
         <Route path="/cart" component={Cart} />
         <Route path="/details" component={Details} />
         <Route path="/favourites" component={Favourites} />

@@ -44,7 +44,7 @@ export const ButtonContainer3=styled.button`
 text-transform:capitalize;
 font-size:1.2rem;
 background:transparent;
-border:1px solid #d6bcb6;
+border:1px solid #444941;
 color:"var(--purpleOne)";
 padding:0.2rem 0.5rem;
 cursor:pointer;
