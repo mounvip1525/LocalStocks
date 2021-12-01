@@ -20,7 +20,7 @@ export default class Navbar extends Component {
                     <div className="left-links">
                     <ButtonContainer2 className="d-flex">
                         <div className="left">
-                            <span className="mr-2"><i className="fa fa-phone" /></span><a href="mailto:mounvip1525@gmail.com">Contact Us</a>
+                            <span className="mr-2"><i className="fa fa-phone" /></span><Link to="/Contact">Volunteer</Link>
                         </div> 
                         <div>
                         <Link to="/favourites" className="left">

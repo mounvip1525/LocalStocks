@@ -12,6 +12,7 @@ import Modal from './components/Modal';
 import Footer from './components/Footer';
 import Favourites from './components/Favourites/FavouritesList';
 import Home from "./components/Home";
+import ContactMe from "./components/contact";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/cart" component={Cart} />
         <Route path="/details" component={Details} />
         <Route path="/favourites" component={Favourites} />
+        <Route path="/Contact" component={ContactMe} />
         {/* if nthing matces then NotFound will be dispalyed */}
         <Route component={NotFound} />
       </Switch>
