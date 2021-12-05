@@ -53,6 +53,9 @@ export default function Home() {
           <img src={landing7} alt="ls" />
           <img src={landing8} alt="ls" />
       </div>
+      <div className='motto'>
+        
+      </div>
         <button><Link to="/products" style={{textDecoration: "none",color: "black"}}>Start Shopping</Link></button>
     </div>
   );

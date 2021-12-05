@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Favourites from './components/Favourites/FavouritesList';
 import Home from "./components/Home";
 import ContactMe from "./components/contact";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/details" component={Details} />
         <Route path="/favourites" component={Favourites} />
         <Route path="/Contact" component={ContactMe} />
+        <Route path="/faq" component={Faq} />
         {/* if nthing matces then NotFound will be dispalyed */}
         <Route component={NotFound} />
       </Switch>

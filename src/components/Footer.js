@@ -1,4 +1,6 @@
+import { Chat, QuestionAnswer } from '@material-ui/icons'
 import React, { Component } from 'react'
+import { Link } from "react-router-dom"
 
 export default class Footer extends Component {
     render() {
@@ -17,6 +19,9 @@ export default class Footer extends Component {
                 <div className="footer-text mt-3">
                     <p className="mt-0 mb-0">Terms of Use • Privacy Policy</p>
                     <p className="mt-0 copyright text-muted">© Local Stocks</p>
+                </div>
+                <div className="chat">
+                    <Link to="/faq"><QuestionAnswer /></Link>
                 </div>
             </div>
         )

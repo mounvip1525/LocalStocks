@@ -119,7 +119,7 @@ ul{
   padding:0;
 }
 section{
-  min-height:45vh;
+  min-height:58vh;
 }
 /* cartItem */
 .cartItem{
@@ -245,7 +245,7 @@ section{
 }
 /* favourites */
 .favouritesList{
-  min-height:50vh;
+  min-height:58vh;
 }
 .notfound2{
   margin:auto;
@@ -324,4 +324,15 @@ section{
 }
 .box-shadow{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.chat{
+  position:fixed;
+  right:3%;
+  bottom:5%;
+  background:#7FC8A9;
+  padding:1%;
+  border-radius: 50%;
+}
+.chat a{
+  color:white
 }
