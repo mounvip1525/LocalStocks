@@ -322,3 +322,6 @@ section{
   font-size: 1.2rem;
   margin:5% auto;
 }
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

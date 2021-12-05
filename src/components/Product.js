@@ -71,7 +71,7 @@ const ProductWrapper = styled.div`
 &:hover {
 .card {
     border: 0.04rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 }
 .img-container {
