@@ -6,23 +6,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 
 export default function Faqs() {
-  const mTop = {
-    margin: "4% 0% 2%",
-  };
-  function ContextAwareToggle({ children, eventKey, callback }) {
-    // const currentEventKey = useContext(AccordionContext);
-  
+  function ContextAwareToggle({ children, eventKey, callback }) {  
     const decoratedOnClick = useAccordionToggle(
       eventKey,
       () => callback && callback(eventKey),
     );
-  
-    // const isCurrentEventKey = currentEventKey === eventKey;
-  
     return (
       <p
-        // type="button"
-        style={{ color:'#3AD4AF',fontWeight:"500", textAlign:"left",cursor:"pointer" }}
+        style={{ fontWeight:"500", textAlign:"left",cursor:"pointer" }}
         onClick={decoratedOnClick}
       >
         {children}
@@ -85,12 +76,12 @@ export default function Faqs() {
 
   return (
     <div className="App">
-      <Jumbotron className="container-fluid">
-        <h1 style={mTop}>Frequently Asked Questions</h1>
-        <Accordion defaultActiveKey="0" style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
+        <h1 style={{textAlign:"center",margin:"3%"}}>Frequently Asked Questions</h1>
+        <div style={{width:"100vw",textAlign:"center",display:"flex",justifyContent:"center"}}>
+        <Accordion defaultActiveKey="0" style={{display:"flex",justifyContent:"center",flexDirection:"column",width:"70vw"}}>
 {faq.map(f=>(
-          <Card key={f.id} className="m-2 faqCard">
-          <Card.Header>
+          <Card key={f.id} className="m-2 faqCard" style={{background:"white"}}>
+          <Card.Header style={{background:"#7FC8A9",color:"white"}}>
             <ContextAwareToggle eventKey={`${f.id}`}>{f.q}</ContextAwareToggle>
           </Card.Header>
           <Accordion.Collapse eventKey={`${f.id}`}>
@@ -99,8 +90,7 @@ export default function Faqs() {
         </Card>
 ))}
     </Accordion>
-
-      </Jumbotron>
+    </div>
     </div>
   );
 }
