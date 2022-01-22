@@ -7,8 +7,8 @@
 ## What is Local Stocks? :thinking:
 Local stocks aims to function as an effective and efficient bridge between Indian farmers and buyers across the world for high-quality organic produce without relying on the middlemen. An integrated approach is followed by us for delivering the best organic food for everyone. We provide a proper platform to all those farmers to reach out to the customers directly and not just as a simple E-commerce website but to connect the people of the urban population with the roots of nature.
 
-<table>
-  <tr>
+<table border="3">
+  <tr style="display:flex;align-items:center">
     <td align="center">
         Shrama-Dhaan<br>
           Voluntary personal and physical contribution to the environment and for gaining knowledge about the agricultural principles the natural way. 
@@ -23,6 +23,16 @@ Local stocks aims to function as an effective and efficient bridge between India
     </td>
   </tr>
   </table>
+  
+  ## Tech Stack 💻
+  
+  <div align="center">
+  
+  <img align="left" alt="React" width="50px" height="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+  <img align="left" alt="CSS3" width="50px" height="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+  </div>
+  
+  <br /><br />
 
 ## Installation and Setup Instructions :running:
 
@@ -42,10 +52,3 @@ To Visit App:
 localhost:3000
 ``` 
 
-```javascript
-
-if (youEnjoyed) {
-    starThisRepository();
-}
-
-```
